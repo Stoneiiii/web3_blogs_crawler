@@ -1,7 +1,6 @@
 ## Introduction
 
-这是一个基于nodejs的爬虫的后端。采用微服务架构。
-使用express搭建轻量级后端GraphQL服务，和调用微服务。
+This is a Node.js-based crawler backend built using a microservices architecture. It uses Express to set up a lightweight backend GraphQL service and to invoke microservices.
 ### The main libraries used
 Crawler：
 - selenium
