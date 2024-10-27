@@ -22,4 +22,10 @@ async function coinbase_main() {
     const data = await coinbase_cralwer();
     await insertData(data);
 }
-coinbase_main()
+// coinbase_main()
+
+module.exports = {
+    protocol_main,
+    ethereum_main,
+    coinbase_main
+}

@@ -1,7 +1,10 @@
 {
   "dependencies": {
     "chromedriver": "^130.0.1",
-    "selenium-webdriver": "^4.25.0"
+    "moment": "^2.30.1",
+    "selenium-webdriver": "^4.25.0",
+    "seneca": "^4.0.0-rc4",
+    "seneca-await": "^0.0.12"
   },
   "name": "crawl",
   "version": "1.0.0",
@@ -14,5 +17,5 @@
   "description": "",
   "devDependencies": {
     "mocha": "10.7.3"
-}
+  }
 }

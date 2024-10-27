@@ -8,14 +8,14 @@ async function protocol_cralwer() {
     let driver = await new Builder().forBrowser("chrome")
         .setChromeOptions(chromeOptions)
         .build()
-
+    console.log("start.")
     let data = [];
     try {
         await driver.get('https://www.protocol.ai/blog/')
         const articles = await driver.findElements(By.css('article'));
         for (let i = 1; i <= articles.length; i++) {
             let articleData = {};
-
+            console.log(`Crawling the ${i} blog`)
             // 标题
             const titleElement = await driver.findElement(By.xpath(`//article[${i}]/div[2]/header/a/h1`));
             await driver.executeScript("arguments[0].scrollIntoView();", titleElement);

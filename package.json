@@ -1,7 +1,25 @@
 {
+  "name": "blog-crawler",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node ./bin/www",
+    "service": "concurrently \"node ./crawl/servers/crawler_server.js\" \"nodemon ./src/utils/service.mjs\""
+  },
   "dependencies": {
-    "dayjs": "^1.11.13",
-    "moment": "^2.30.1",
-    "mysql": "^2.18.1"
+    "@apollo/datasource-rest": "^6.3.0",
+    "@apollo/server": "^4.11.0",
+    "concurrently": "^9.0.1",
+    "cookie-parser": "~1.4.4",
+    "datasource-sql": "^2.1.0",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "graphql": "^16.9.0",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^3.1.7",
+    "seneca-await": "^0.0.12"
   }
 }
