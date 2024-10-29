@@ -70,6 +70,11 @@ npm i
 ```
 npm run service
 ```
+Start 2 services using concurrently.
+      
+      1. Crawler microservice
+      2. backend service
+   
 3. GraphQL website
 ```
 http://localhost:4000/graphql
@@ -82,3 +87,12 @@ e.g. http://localhost:4000/runcrawler/coinbase
 - coinbase
 - ethereum
 - protocol
+
+It will launch the corresponding crawler script.
+
+## Future
+- Crawler running without window display.
+- The crawler records the previous crawl history to avoid duplicate crawls.
+- Add response headers and IP pools to bypass anti-crawl detection.(The coinbase has DDOS detection for blog content pages.)
+- Using NoSQL instead of MySQL, because blog content is better suited for non-relational databases such as Redis.
+- Microservices Architecturization
