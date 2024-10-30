@@ -2,8 +2,8 @@ import gql from "graphql-tag";
 
 
 export const GET_ALLBLOGS = gql`
-query {
-  getAllEntries {
+query GetAllEntries($page: Int, $size: Int) {
+  getAllEntries(page: $page, size: $size) {
     description
     id
     articlebody
