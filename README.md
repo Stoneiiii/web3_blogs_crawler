@@ -86,7 +86,7 @@ http://localhost:4000/runcrawler/*
 e.g. http://localhost:4000/runcrawler/coinbase
 - coinbase
 - ethereum
-- protocol
+- protocol (Update: unavailable because of Vercel Security Checkpoint)
 
 It will launch the corresponding crawler script.
 
