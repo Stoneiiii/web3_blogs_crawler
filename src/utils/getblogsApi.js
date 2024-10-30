@@ -6,8 +6,12 @@ class GetBlogsApi extends RESTDataSource {
     this.baseURL = "http://localhost:3456/api/";
   }
 
-  async getAllEntries() {
-    return this.get("blogs");
+  async getAllEntries(param) {
+    const pageIndex = param.page - 1;
+    const size = param.size;
+    let url = `blogs?_p=${pageIndex}&_size=${size}`
+    const response = await this.get(url);
+    return response
   }
 
   async getEntryById(id) {

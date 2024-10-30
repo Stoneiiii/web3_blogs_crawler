@@ -9,7 +9,7 @@ const typeDefs = `#graphql
   }
 
   type Query {
-    getAllEntries: [blogs]
+    getAllEntries(page: Int, size: Int): [blogs]
     getEntryById(id: ID!): blogs
   }
 `;
